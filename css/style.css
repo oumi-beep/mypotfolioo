@@ -10,11 +10,12 @@
     scroll-behavior: smooth;
     font-family: 'Poppins',sans-serif;
 }
+
 :root {
     --bg-color:#1f242d;
-    --second-bg-color:#323946;
-    --text-color:#fff;
-    --main-color:#0ef;
+    --second-bg-color:#4d5563;
+    --text-color:white;
+    --main-color:aqua;
 
 }
 html {
@@ -231,3 +232,70 @@ span {
 }
 
 /* Style pour la section de contact */
+#contact {
+    background-color: var(--second-bg-color);
+    padding: 10rem 9% 2rem;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+    color: var(--text-color);
+}
+
+#contact-form {
+    display: grid;
+    gap: 2rem;
+}
+
+#contact-form .form-group {
+    display: grid;
+    gap: 1rem;
+}
+
+#contact-form label {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 1.6rem;
+}
+
+#contact-form textarea {
+    height: 10rem;
+}
+
+#contact-form button[type="submit"] {
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    border: none;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    font-size: 2rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+    box-shadow: none;
+}
+
+#response-message {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: var(--main-color);
+}
